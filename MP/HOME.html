@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Home</title>
+<style>
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0; height: 100%;
+  }
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+ width:100%;
+height:50%;
+  position: relative;
+  margin: auto;
+}
+
+.my-title{
+ font-family:'monotype corsiva';
+font-size:30px;
+ text-decoration-style: solid;
+ font-weight: bold;
+ background-color: aliceblue;
+ text-align: center;
+ /* color:#003366; */
+ color:#d4af37
+
+}
+.sub-title{
+  font-family:segoe script;
+  font-weight: bold;
+  text-align: center;
+  background-color: aliceblue;
+  /* color:#003366; */
+  color:#edc967
+
+}
+.title{
+  
+  text-align: center;
+}
+
+ul {
+    width : 100%;
+    list-style-type: none;
+    margin: 0 300px;
+    padding: 0;
+    overflow: hidden;
+    color: solid black;
+position:fixed;
+}
+
+li {
+    float: left;
+color:black;
+}
+
+li a {
+    display: block;
+    color:#ffffcc;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+font-size:15px;
+ text-decoration-style: solid;
+font-family:"Cursive","Lucida Handwriting";
+}
+
+li a:hover {
+    /* color:#0059b3; */
+    color: #EDC967;
+font-weight: bold;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1s;
+}
+
+@keyframes fade {
+  from {opacity: .6} 
+  to {opacity: 1}
+}
+
+</style>
+</head>
+<body>
+
+<div class="slideshow-container">
+
+<div class="title">
+<div class="my-title">ALMS</div>
+<div class="sub-title"> Event Planners</div>
+</div>
+
+<div class="mySlides fade">
+ <div class="navbar">
+            <ul>
+                <li><a href="#" id="home">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="#">Testimonial</a></li>                
+                
+                <li><a href="contactus.html">Contact us</a></li>
+            </ul>
+            </ul>
+        </div>
+
+  <img src="i4.jpeg" style="width:100%; height:545px;">
+
+</div>
+
+
+<div class="mySlides fade">
+  <div class="navbar">
+            <ul>
+                <li><a href="#" id="home">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="#">Testimonial</a></li>                
+                <li><a href="contactus.html">Contact us</a></li>
+            </ul>
+        </div>
+  <img src="i1.jpeg" style="width:100%; height:545px;">
+
+</div>
+
+<div class="mySlides fade">
+  <div class="navbar">
+            <ul>
+                <li><a href="#" id="home">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="#">Testimonial</a></li>            
+                <li><a href="contactus.html">Contact us</a></li>
+            </ul>
+            </ul>
+        </div>
+  <img src="i2.jpeg" style="width:100%; height:545px;">
+
+</div>
+
+<div class="mySlides fade">
+  <div class="navbar">
+            <ul>
+                <li><a href="#" id="home">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="#">Testimonial</a></li>           
+                
+                <li><a href="contactus.html">Contact us</a></li>
+            </ul>
+            </ul>
+        </div>
+  <img src="i3.jpeg" style="width:100%; height:545px;">
+
+</div>
+
+</div>
+
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+</body>
+</html> 
